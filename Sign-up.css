@@ -1,0 +1,25 @@
+body{
+    display: flex;
+}
+.left{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+}
+body.right{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
