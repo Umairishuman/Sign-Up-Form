@@ -9,6 +9,10 @@ p, h1, h2, h3, h4, h5, h6{
     font-family: "Norse Bold";
     src: url("Font/Norse-Bold.otf");
 }
+@font-face {
+    font-family: Muli-Light;
+    src: url("Font/Muli-Light.ttf");
+}
 .left{
     margin: 0px;
     padding: 0px;
@@ -54,12 +58,84 @@ body.right{
     justify-content: center;
     align-items: center;
 }
-.right header{
-    padding: 60px 20px 10px 50px;
+.right header, .right main{
+    margin: 0px;
     box-sizing: border-box;
-    height: 30vh;
+
+}
+:root{
+    --left-padding: 50px;
+    --footter-header-color: #fcfcfc;
+
+}
+.right header{
+    
+    padding: 60px 20px 10px var(--left-padding);
+    height: 35vh;
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgba(168, 168, 209, 0.658);
+    background-color: var(--footter-header-color);
+}
+.right main{
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px 0px 20px var(--left-padding);
+}
+.right>main>section{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 20px 10px 0px 0px;
+}
+.right>main>section>div{
+    width: 45%;
+    box-sizing: border-box;
+}
+.right>main>section>div>label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font: 12px Muli-Light;
+}
+.right>main>section>div>input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+}
+.right>footer{
+    background-color: var(--footter-header-color);
+    width: 100%;
+    height: 10vh;
+    padding: 20px var(--left-padding);
+}
+.right>footer>button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c6c4c;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}   
+.right>footer>button:hover{
+    background-color: #4c5c4c;
+    color: azure;
+}
+.right>footer>p{
+    font-size: 15px;
+    padding: 15px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right>footer>p>a{
+    text-decoration: none;
+    color: #5c6c4c;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.right>footer>p>a:hover{
+    text-decoration: underline;
+    color: #4c5c4c;
 }
