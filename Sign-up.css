@@ -1,0 +1,141 @@
+body{
+    display: flex;
+}
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Font/Norse-Bold.otf");
+}
+@font-face {
+    font-family: Muli-Light;
+    src: url("Font/Muli-Light.ttf");
+}
+.left{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    position: relative;
+}
+.odin p{
+    font-family: 'Norse Bold';
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left h1.odin{
+    padding: 10px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    color: white;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+body.right{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right header, .right main{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+:root{
+    --left-padding: 50px;
+    --footter-header-color: #fcfcfc;
+
+}
+.right header{
+    
+    padding: 60px 20px 10px var(--left-padding);
+    height: 35vh;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--footter-header-color);
+}
+.right main{
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px 0px 20px var(--left-padding);
+}
+.right>main>section{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 20px 10px 0px 0px;
+}
+.right>main>section>div{
+    width: 45%;
+    box-sizing: border-box;
+}
+.right>main>section>div>label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font: 12px Muli-Light;
+}
+.right>main>section>div>input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+}
+.right>footer{
+    background-color: var(--footter-header-color);
+    width: 100%;
+    height: 10vh;
+    padding: 20px var(--left-padding);
+}
+.right>footer>button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c6c4c;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}   
+.right>footer>button:hover{
+    background-color: #4c5c4c;
+    color: azure;
+}
+.right>footer>p{
+    font-size: 15px;
+    padding: 15px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right>footer>p>a{
+    text-decoration: none;
+    color: #5c6c4c;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.right>footer>p>a:hover{
+    text-decoration: underline;
+    color: #4c5c4c;
+}
